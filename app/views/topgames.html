@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/views/style.css">
+<div class="container-fluid ">
+  <div class="row " >
+    <!-- <div class="col-lg-1 col-md-0 ml-5 mr-5" ></div> -->
+    <div class="col-lg-3 col-md-12 center " style="margin-top: 40px;" ng-repeat="game in games ">
+    
+      <div class="ribbon ribbon-top-right" ng-hide="{{!game.categories[2]}}"><span>{{game.categories[2]}}</span></div>
+      
+
+      <img class="image "  ng-src="{{'https:'+ game.image}}" alt="">
+        <h1 class="name" >{{game.amount}}</h1>
+      <!-- <img class="hide" src="/components/play.png" alt=""> -->
+      <!-- <h1 class="name" >{{game.amount}}</h1> -->
+    </div>
+    <div class="col-lg-1 col-md-0"></div>
+  </div>
+</div>

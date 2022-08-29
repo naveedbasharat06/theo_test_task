@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/views/style.css">
+<div class="container-fluid ">
+  <div class="row " style="margin-top: 30px;">
+    <!-- <div class="col-lg-1 col-md-0 ml-5 mr-5" ></div> -->
+    <div class="col-lg-3 col-md-12 center " ng-repeat="classic in classics ">
+      <h1 class="name" >{{classic.name}}</h1>
+      
+      <div class="ribbon ribbon-top-right" ng-hide="{{!classic.categories[2]}}"><span>{{classic.categories[2]}}</span></div>
+      
+
+      <img class="image" ng-src="{{'https:'+ classic.image}}" alt="">
+     
+      <img class="hide" src="/components/play.png" alt="">
+      <h1 class="name" >{{classic.name}}</h1>
+    </div>
+    <div class="col-lg-1 col-md-0"></div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="/views/style.css">
+<div class="container-fluid">
+    <div class="row" style="margin-top: 30px;" >
+          <!-- <div class="col-lg-1 col-md-0 ml-5 mr-5" ></div> -->
+          <div class="col-lg-3 col-md-12 center " ng-repeat="blackjack in blackjacks ">
+            <!-- <div class="ribbon ribbon-top-right"><span>ribbon</span></div> -->
+              <img ng-src="{{'https:'+ blackjack.image}}" alt="">
+              <img class="hide" src="/components/play.png" alt="">
+          </div>
+          <div class="col-lg-1 col-md-0"></div>
+      </div>
+    </div
